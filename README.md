@@ -3,6 +3,9 @@ This project demonstrates a bug in [Maven Javadoc Plugin](https://maven.apache.o
 versions 3.1.0 through 3.3.0.  When a reactor build has multiple projects with the same groupId and artifactId, even
 when different versions, the javadoc fails with `Exit code: 1 - error: module not found: com.aoindustries.example`
 
+## Issue Reported:
+We have reported this as [Issue #682](https://issues.apache.org/jira/projects/MJAVADOC/issues/MJAVADOC-682).
+
 ## To Reproduce:
 1. Clone this project: `git clone https://github.com/aoindustries/maven-javadoc-plugin-failing-multiple-projects-same-name.git`
 2. Change to project directory: `cd maven-javadoc-plugin-failing-multiple-projects-same-name`
@@ -15,9 +18,6 @@ when different versions, the javadoc fails with `Exit code: 1 - error: module no
 * Changing the groupId or artifactId in either module-1 or module-2 makes it work.
 * Changing module names, package names, or class names in modules has no affect.
 * We believe this to be distinct from [Issue #673](https://issues.apache.org/jira/projects/MJAVADOC/issues/MJAVADOC-673)
-
-## Issue Reported:
-We have reported this as [Issue #682](https://issues.apache.org/jira/projects/MJAVADOC/issues/MJAVADOC-682).
 
 ## Contact Us
 For questions or support, please [contact us](https://aoindustries.com/contact):
