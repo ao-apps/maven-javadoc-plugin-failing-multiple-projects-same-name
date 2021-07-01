@@ -9,11 +9,11 @@ We have reported this as [Issue #682](https://issues.apache.org/jira/projects/MJ
 ## To Reproduce:
 1. Clone this project: `git clone https://github.com/aoindustries/maven-javadoc-plugin-failing-multiple-projects-same-name.git`
 2. Change to project directory: `cd maven-javadoc-plugin-failing-multiple-projects-same-name`
-3. Perform build to see error in `jar` goal: `mvn clean install`
+3. Perform build to see error in `jar` goal: `mvn clean verify`
 4. Also fails with `javadoc` goal: `mvn clean compile javadoc:javadoc`
 
 ## Notes:
-* Can build individual modules directly, such as `(cd module-1 && mvn clean install)`
+* Can build individual modules directly, such as `(cd module-1 && mvn clean verify)`
 * Reverting to maven-javadoc-plugin version 3.0.1 makes it work
 * Changing the groupId or artifactId in either module-1 or module-2 makes it work.
 * Changing module names, package names, or class names in modules has no affect.
