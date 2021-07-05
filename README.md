@@ -16,7 +16,7 @@ We have reported this as [Issue #682](https://issues.apache.org/jira/projects/MJ
 * Can build individual modules directly, such as `(cd module-1 && mvn clean verify)`
 * Reverting to maven-javadoc-plugin version 3.0.1 makes it work
 * Changing the groupId or artifactId in either module-1 or module-2 makes it work.
-* Changing module names, package names, or class names in modules has no affect.
+* Changing module names, package names, or class names in modules has no effect.
 * We believe this to be distinct from [Issue #673](https://issues.apache.org/jira/projects/MJAVADOC/issues/MJAVADOC-673)
 
 ## Contact Us
