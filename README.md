@@ -1,6 +1,6 @@
 # Bug in Maven Javadoc Plugin
 This project demonstrates a bug in [Maven Javadoc Plugin](https://maven.apache.org/plugins/maven-javadoc-plugin/)
-versions 3.1.0 through 3.3.0.  When a reactor build has multiple projects with the same groupId and artifactId, even
+versions 3.1.0 through 3.3.1.  When a reactor build has multiple projects with the same groupId and artifactId, even
 when different versions, the javadoc fails with `Exit code: 1 - error: module not found: com.aoindustries.example`
 
 ## Issue Reported:
