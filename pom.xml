@@ -23,9 +23,9 @@
 					<artifactId>maven-javadoc-plugin</artifactId>
 					<!--
 						Works with version 3.0.1.
-						Fails with versions 3.1.0 through 3.4.0.
+						Fails with versions 3.1.0 through 3.4.1.
 					-->
-					<version>3.4.0</version>
+					<version>3.4.1</version>
 					<configuration>
 						<release>9</release>
 					</configuration>
