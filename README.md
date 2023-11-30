@@ -1,3 +1,9 @@
+# Archived Repository
+
+This issue has been fixed in https://github.com/apache/maven-javadoc-plugin/pull/253 for inclusion in version 3.6.3.
+
+---
+
 # Bug in Maven Javadoc Plugin
 This project demonstrates a bug in [Maven Javadoc Plugin](https://maven.apache.org/plugins/maven-javadoc-plugin/)
 versions 3.1.0 through 3.6.2.  When a reactor build has multiple projects with the same groupId and artifactId, even
